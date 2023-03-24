@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Cosmetics from "./components/Cosmetics/Cosmetics";
+import Shoes from "./components/Shoes/Shoes";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -8,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <Cosmetics />
+      <Shoes />
     </div>
   );
 }
