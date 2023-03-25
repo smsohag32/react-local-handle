@@ -1,5 +1,5 @@
 import React from "react";
-import { addToDb } from "../../utilities/Fakedb";
+import { addToDb, removeItem } from "../../utilities/Fakedb";
 
 const Cosmetic = ({ name, price, id }) => {
   const addToCart = (id) => {
@@ -13,7 +13,14 @@ const Cosmetic = ({ name, price, id }) => {
       <button onClick={() => addToCart(id)} className="bg-slate-500 p-2">
         Add to Cart
       </button>
-      <button className="bg-slate-500 m-1 p-2">Purchase</button>
+      <button
+        onClick={() => {
+          removeItem(id);
+        }}
+        className="bg-slate-500 m-1 p-2"
+      >
+        Remove
+      </button>
     </div>
   );
 };
