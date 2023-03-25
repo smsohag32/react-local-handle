@@ -6,6 +6,6 @@ const multiply = (first, second) => {
 };
 // export default add; only one function export
 
-// multiple funtion export
+// multiple function export
 
 export { add, multiply };
